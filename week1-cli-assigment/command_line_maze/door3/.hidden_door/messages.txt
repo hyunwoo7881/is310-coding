@@ -1,0 +1,1 @@
+Congratulations! You have solved the maze and found the correct door!

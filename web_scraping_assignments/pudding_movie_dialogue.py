@@ -5,7 +5,7 @@ import pandas as pd
 
 movies=pd.read_csv("cleaned_pudding_data.csv")
 
-with open("pudding_movie_dialogue.csv", 'w', newline='', encoding='utf-8') as csvfile:
+with open("pudding_movie_dialogue.csv", 'w', newline=' ', encoding='utf-8') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(["Movie Title", "First 1000 Characters"])
 

@@ -25,4 +25,9 @@ people_data = people_response.json()
 with open('people','w') as f:
     json.dump(people_data,f, indent=4)
 
-print(people_data["results"][0]["name"])
+people_names = [person["name"] for person in people_data["results"]]
+
+with open('people_names.json','w') as f:
+    json.dump(people_names, f, indent=4)
+
+print(people_names)

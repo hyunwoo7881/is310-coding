@@ -19,4 +19,3 @@ with open("humanist_volumes.csv", 'w') as file:
             volume_response = requests.get(volume_url)
             volume_soup = BeautifulSoup(volume_response.text, "html.parser")
             print(volume_soup.get_text())
-        
